@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🌍 Real-Time Temperature Management App
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), designed to showcase **real-time data handling** using **Server-Sent Events (SSE)** and HTTP API interactions.
+
+## 🚀 Getting Started
+
+First, install the dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🌡️ **Real-time Temperature Updates**: Receive live updates about temperatures and countries every 5 seconds using SSE.
+- 🖋️ **Dynamic Submissions**: Submit new temperatures and countries through the app interface via HTTP POST.
+- 🔄 **Switch Initial Data**: Dynamically switch between predefined temperature sets using HTTP PUT.
+- 🌓 **Dark Mode Ready**: Supports system-level dark mode with smooth transitions.
+- 🎨 **Styled with Tailwind CSS**: Responsive and modern design.
+- 🛠️ **Development**: Easy to set up and extend.
 
-## Learn More
+## 📁 File Structure
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Located in `src/app/page.tsx`, implements real-time data fetching and UI interactions.
+- **Backend**: API routes are in `src/app/api/sse/route.ts`, handling GET, POST, and PUT requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 Key Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Start the development server
+npm run dev
 
-## Deploy on Vercel
+# Build for production
+npm run build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Start the production server
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📚 Learn More
+
+To dive deeper into the tools and technologies used in this project, check out these resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Learn about utility-first styling with Tailwind CSS.
+- [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events) - Learn how SSE works.
+
+## 🚢 Deploy on Vercel
+
+The easiest way to deploy your Next.js app is through the Vercel Platform. Follow these steps:
+
+1. Push your code to a GitHub, GitLab, or Bitbucket repository.
+2. Connect your repository to Vercel.
+3. Deploy your application with one click!
+
+For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
